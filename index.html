@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jalen Ward — AI Engineer</title>
+  <meta name="description" content="Jalen Ward — AI Engineer. Full-stack LLM applications: RAG pipelines, SQL-backed CRMs, and serverless APIs on Cloudflare. Founder, Ward Tech Systems." />
+  <meta name="theme-color" content="#0d5d9f" />
+  <meta property="og:title" content="Jalen Ward — AI Engineer" />
+  <meta property="og:description" content="Full-stack LLM applications: RAG pipelines, SQL-backed CRMs, and serverless APIs on Cloudflare. Founder, Ward Tech Systems." />
+  <meta property="og:url" content="https://wardtechsystems.com/resume/" />
+  <meta property="og:type" content="profile" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%230d5d9f'/%3E%3Ctext x='32' y='42' font-family='Arial Black,sans-serif' font-size='28' font-weight='800' fill='white' text-anchor='middle' letter-spacing='2'%3EJW%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Saira+Condensed:wght@600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #17222e;
+      --muted: #4c5b6b;
+      --accent: #0d5d9f;
+      --rule: #d8e0e8;
+      --bg: #f4f6f8;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Source Sans 3", "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.42;
+      font-size: 15px;
+    }
+    .sheet {
+      max-width: 850px;
+      margin: 28px auto;
+      background: var(--card);
+      padding: 44px 52px;
+      box-shadow: 0 2px 24px rgba(13, 34, 56, 0.12);
+      border-top: 5px solid var(--accent);
+    }
+    header h1 {
+      font-family: "Saira Condensed", "Arial Narrow", sans-serif;
+      font-size: 38px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      line-height: 1.05;
+    }
+    .headline {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--accent);
+      margin-top: 2px;
+    }
+    .subhead { color: var(--muted); font-size: 14.5px; margin-top: 2px; }
+    .contact {
+      display: flex; flex-wrap: wrap; gap: 4px 18px;
+      margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--rule);
+      font-size: 13.5px; color: var(--muted);
+    }
+    .contact a { color: var(--accent); text-decoration: none; }
+    .contact a:hover { text-decoration: underline; }
+    section { margin-top: 20px; }
+    h2 {
+      font-family: "Saira Condensed", "Arial Narrow", sans-serif;
+      font-size: 15px; font-weight: 700; letter-spacing: 2px;
+      text-transform: uppercase; color: var(--accent);
+      border-bottom: 1.5px solid var(--rule);
+      padding-bottom: 3px; margin-bottom: 9px;
+    }
+    .summary { font-size: 15px; }
+    .skills { list-style: none; }
+    .skills li { margin-bottom: 4px; font-size: 14px; }
+    .skills b { color: var(--ink); }
+    .role { margin-bottom: 13px; }
+    .role:last-child { margin-bottom: 0; }
+    .role-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+    .role-title { font-weight: 700; font-size: 15.5px; }
+    .role-title .co { font-weight: 600; color: var(--accent); }
+    .role-meta { color: var(--muted); font-size: 13px; white-space: nowrap; }
+    .role ul { margin: 4px 0 0 18px; }
+    .role li { margin-bottom: 3px; font-size: 14px; }
+    .work { list-style: none; }
+    .work li { margin-bottom: 5px; font-size: 14px; }
+    .work b { color: var(--ink); }
+    .work a { color: var(--accent); text-decoration: none; font-weight: 600; }
+    .work a:hover { text-decoration: underline; }
+    .pubs { font-size: 13.5px; color: var(--muted); }
+    .pubs a { color: var(--accent); text-decoration: none; }
+    .toolbar {
+      position: fixed; top: 14px; right: 16px; display: flex; gap: 8px;
+    }
+    .toolbar a, .toolbar button {
+      font: 600 13px "Source Sans 3", sans-serif;
+      background: var(--accent); color: #fff; border: 0; border-radius: 6px;
+      padding: 8px 14px; cursor: pointer; text-decoration: none;
+      box-shadow: 0 2px 8px rgba(13, 93, 159, 0.35);
+    }
+    .toolbar a:hover, .toolbar button:hover { background: #0a4a80; }
+    @media (max-width: 700px) {
+      .sheet { margin: 0; padding: 26px 20px; }
+      .toolbar { position: static; margin: 12px 16px 0; }
+    }
+    @media print {
+      body { background: #fff; font-size: 9.4pt; line-height: 1.3; }
+      .sheet { margin: 0; max-width: none; box-shadow: none; padding: 0; border-top: 3px solid var(--accent); padding-top: 9pt; }
+      .toolbar { display: none; }
+      section { margin-top: 7.5pt; }
+      h2 { font-size: 10.5pt; margin-bottom: 4pt; padding-bottom: 2pt; }
+      header h1 { font-size: 21pt; }
+      .headline { font-size: 12pt; }
+      .subhead { font-size: 9.5pt; }
+      .contact { font-size: 8.8pt; margin-top: 5pt; padding-top: 5pt; }
+      .summary { font-size: 9.4pt; }
+      .role { margin-bottom: 6pt; }
+      .role-title { font-size: 10pt; }
+      .role-meta { font-size: 8.6pt; }
+      .role ul { margin-top: 2pt; }
+      .role li, .skills li, .work li { font-size: 9pt; margin-bottom: 1.5pt; }
+      .pubs { font-size: 8.8pt; }
+      a { color: var(--accent) !important; }
+      @page { size: letter; margin: 0.45in 0.55in; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <a href="jalen-ward-resume.pdf" download>Download PDF</a>
+    <button onclick="window.print()">Print</button>
+  </div>
+
+  <main class="sheet">
+    <header>
+      <h1>Jalen Ward</h1>
+      <div class="headline">AI Engineer — Full-Stack LLM Applications</div>
+      <div class="subhead">Ward Tech Systems &nbsp;·&nbsp; Fort Worth, Texas</div>
+      <div class="contact">
+        <span><a href="mailto:support@wardtechsystems.com">support@wardtechsystems.com</a></span>
+        <span><a href="tel:+19727627970">(972) 762-7970</a></span>
+        <span><a href="https://wardtechsystems.com">wardtechsystems.com</a></span>
+        <span><a href="https://impactiq.us">impactiq.us</a></span>
+        <span><a href="https://insurtech-beta.com">insurtech-beta.com</a></span>
+      </div>
+    </header>
+
+    <section>
+      <h2>Summary</h2>
+      <p class="summary">
+        Full-stack engineer who ships production AI software — SQL-backed CRMs, custom serverless APIs, and
+        production RAG/LLM workflows on Cloudflare, in daily use by real contractor and insurance-restoration teams.
+        Six-plus years in roofing and restoration, from project management to operations leadership to ownership,
+        give rare domain depth behind the code. Published author on systems, automation, and the trades.
+      </p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li><b>AI / LLM:</b> RAG pipelines &amp; retrieval knowledge bases · LLM agent orchestration &amp; multi-agent workflows · prompt engineering · AI-assisted development (Claude Code) · self-hosted inference (Ollama)</li>
+        <li><b>Languages &amp; Frameworks:</b> TypeScript / JavaScript · React · Node.js · SQL · HTML/CSS</li>
+        <li><b>Backend &amp; Data:</b> SQL schema design &amp; relational modeling · REST API design · SQLite / Cloudflare D1 · CRM architecture</li>
+        <li><b>Cloud &amp; Deploy:</b> Cloudflare Workers / Pages / R2 (serverless) · Wrangler · CI/CD (GitHub Actions) · Docker · zero-trust publishing (Cloudflare Tunnel)</li>
+        <li><b>Systems &amp; Domain:</b> Linux &amp; Windows administration · small-business networking (VLANs, NAS) · insurance claims &amp; supplementation · estimating workflows · contractor field operations</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+
+      <div class="role">
+        <div class="role-head">
+          <div class="role-title">AI Engineer <span class="co">— Ward Tech Systems / Built By Ward LLC</span></div>
+          <div class="role-meta">Mar 2021 – Present · Fort Worth, TX</div>
+        </div>
+        <ul>
+          <li>Built and productized <b>ImpactIQ</b>, a contractor-operations platform (canvassing, leads, scheduling, deal stages, claims, field-to-office reporting) — grown out of the internal CRM and claims tooling that ran my own restoration company; now in daily production use by a five-rep sales team.</li>
+          <li>Shipped <b>Insurtech System</b> (insurtech-beta.com): insurance-restoration workflows for claims, supplements, estimate review, and job tracking, backed by a RAG knowledge base of estimates, building codes, and supplement arguments.</li>
+          <li>Deploy on Cloudflare Workers/Pages with custom REST APIs, R2 asset hosting, and D1/SQL schemas; operate a self-hosted multi-node LLM inference cluster (Ollama, Windows/Linux) with load-balanced dispatch for code-review and RAG workloads.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="role-head">
+          <div class="role-title">Supplementation &amp; Documentation Contractor <span class="co">— Golden Nail Roofing</span></div>
+          <div class="role-meta">Contract · Fort Worth, TX</div>
+        </div>
+        <ul>
+          <li>Introduced AI-assisted supplement writing, scope review, and missing-item analysis into paid insurance-claim documentation work, sharply cutting turnaround per supplement package.</li>
+          <li>Standardized estimates, line items, code references, and photo evidence into repeatable review workflows used on every claim.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="role-head">
+          <div class="role-title">Project Manager → Director of Operations <span class="co">— Linear Roofing &amp; General Contractors · Infiniti Roofing</span></div>
+          <div class="role-meta">Jan 2019 – Feb 2022 · Fort Worth, TX</div>
+        </div>
+        <ul>
+          <li>Progressed from project management at Linear Roofing (homeowner outreach, inspections, claims coordination) to Director of Operations at Infiniti Roofing, running the sales pipeline, media, and field-to-office coordination — then founded Built By Ward LLC.</li>
+          <li>Ran end-to-end insurance-restoration operations — the domain model (leads, claims, supplements, job stages) that ImpactIQ later encoded as software.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Selected Work</h2>
+      <ul class="work">
+        <li><b>ImpactIQ</b> — AI-assisted contractor-operations platform: full CRM schema (leads, claims, invoices, documents, activity logs), insurance RAG base, and field-team dashboards. <a href="https://impactiq.us">impactiq.us</a></li>
+        <li><b>Insurtech System</b> — standalone insurance-restoration claims and supplementation platform. <a href="https://insurtech-beta.com">insurtech-beta.com</a></li>
+        <li><b>SEO &amp; local-search tooling</b> — landing-page, local-content, and metadata automation for service businesses.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Publications</h2>
+      <p class="pubs">Published author on Amazon (as <b>J. Michael</b>) — systems, automation, and the trades. <a href="https://www.amazon.com/stores/J.-Michael/author/B0CZP12JHH">Amazon author page</a></p>
+    </section>
+  </main>
+</body>
+</html>
